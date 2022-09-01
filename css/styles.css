@@ -435,3 +435,10 @@ ul {
   margin-left: 24px;
   letter-spacing: 0.03em;
 }
+
+.icon-container {
+  width: 32px;
+  height: 32px;
+  border: black solid 1px;
+  margin-right: 10px;
+}
