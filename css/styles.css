@@ -38,12 +38,14 @@ ul {
 
 .header > .container {
   height: 80px;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .header > .container > .header-content {
   width: 1170px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
