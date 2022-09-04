@@ -27,17 +27,24 @@ ul {
   width: 1600px;
   margin: 0 auto;
 }
+.container > * {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.header {
+  border-bottom: 1px solid var(--header-border);
+}
 
 .header > .container {
   height: 80px;
+}
+
+.header > .container > .header-content {
+  width: 1170px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  /* background-color: #757575; */
-}
-.header {
-  border-bottom: 1px solid var(--header-border);
 }
 
 .agencja-title > .container {
@@ -68,14 +75,13 @@ ul {
   align-items: center;
   justify-content: space-between;
 
-  margin-left: 215px;
+  /* margin-left: 215px; */
 }
 
 .contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 227px;
 }
 
 .agencja-h1 {
@@ -119,6 +125,7 @@ ul {
   font-size: 26px;
   letter-spacing: 0.03em;
   color: var(--black-color);
+  margin-right: 93px;
 }
 
 .web {
@@ -127,7 +134,11 @@ ul {
 
 .navigation > li {
   display: inline;
-  margin: 0 40px;
+  margin-right: 40px;
+}
+
+.navigation > li:last-child {
+  margin-right: 0;
 }
 
 .navigation-current {
@@ -176,6 +187,7 @@ ul {
 .contact-phone-1 {
   display: inline-flex;
   align-items: center;
+
   text-decoration: none;
   color: var(--mian-font-color);
   font-weight: 500;
@@ -200,11 +212,11 @@ ul {
   color: var(--company-blue);
 }
 
-.contact-phone-1 > .icon-header {
+.contact-phone-1 > .icon-container > .icon-header {
   fill: var(--main-font-color);
 }
 
-.contact-phone-1:hover > .icon-header {
+.contact-phone-1:hover > .icon-container > .icon-header {
   fill: var(--company-blue);
 }
 
@@ -220,7 +232,7 @@ ul {
 .agencja-content > .container > ul {
   display: flex;
   gap: 30px;
-  margin-left: 215px;
+  /* margin-left: 215px; */
 }
 
 .agencja-content-header {
@@ -264,7 +276,7 @@ ul {
   margin-left: 30px;
 }
 .agencja-scope-list > li:first-child {
-  margin-left: 215px;
+  margin-left: 0;
 }
 
 .agencja-scope-img {
@@ -283,7 +295,7 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 30px;
-  margin-left: 215px;
+  /* margin-left: 215px; */
   margin-top: 50px;
 }
 
@@ -343,10 +355,12 @@ ul {
   fill: white;
   background-color: var(--company-blue);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .customers > .container {
-  padding: 94px 0 94px 215px;
+  /* padding: 94px 0 94px 215px; */
+  padding: 94px 0;
 }
 
 .customers-header {
@@ -365,6 +379,12 @@ ul {
 .icon-customers {
   border: 1px solid var(--icon-border);
   border-radius: 4px;
+  fill: var(--icon-color);
+}
+.icon-customers:hover {
+  fill: var(--company-blue);
+  border-color: var(--company-blue);
+  cursor: pointer;
 }
 
 .footer {
@@ -374,8 +394,14 @@ ul {
 }
 
 .footer > .container {
-  padding: 60px 0 60px 215px;
+  /* padding: 60px 0 60px 215px; */
+  /* padding: 60px 0; */
+}
+.footer > .container > .footer-content {
+  margin: 0 auto;
+  width: 1170px;
   display: flex;
+  justify-content: flex-start;
 }
 
 .webstudio-footer {
@@ -446,6 +472,7 @@ ul {
 
 .footer-socials-header {
   text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .footer-socials-icons {
@@ -461,6 +488,7 @@ ul {
 
 .icon-footer:hover {
   background-color: var(--company-blue);
+  cursor: pointer;
 }
 
 .portfolio-main {
@@ -521,7 +549,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-left: 215px;
+  /* margin-left: 215px; */
 }
 
 .portfolio-img {
