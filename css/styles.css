@@ -509,7 +509,7 @@ ul {
   margin-left: 8px;
 }
 .portfolio-buttons-list > li:first-child {
-  margin-left: 510px;
+  margin-left: 0;
 }
 
 .portfolio-buttons {
@@ -551,7 +551,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  /* margin-left: 215px; */
+  width: 1170px;
 }
 
 .portfolio-img {
